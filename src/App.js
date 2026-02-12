@@ -37,7 +37,9 @@ export default function App() {
           element={
             <div className="flex justify-center gap-6 flex-wrap">
               <ProductCard title="Mechanical Keyboard" price={4500} inStock />
-              <ProductCard title="Smart Watch" price={7000} inStock={false} />
+<ProductCard title="Smart Watch" price={7000} inStock={false} />
+<ProductCard title="Wireless Headphones" price={3200} inStock />
+
             </div>
           }
         />

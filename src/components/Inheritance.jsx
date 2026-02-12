@@ -36,22 +36,36 @@ export default function Inheritance() {
   ];
 
   return (
-    <div className="flex justify-center mt-10">
-      <div className="bg-white p-6 rounded-xl shadow-md w-96">
-        <h2 className="text-xl font-bold mb-4 text-center">
-          Person Class Hierarchy
-        </h2>
+  <div className="min-h-screen bg-gray-100 flex justify-center pt-16 px-4">
+    <div className="w-full max-w-md bg-white p-6 rounded-2xl shadow-lg">
+      
+      <h2 className="text-2xl font-bold text-center mb-6">
+        Person Class Hierarchy
+      </h2>
 
-        {people.map((p, i) => (
-          <div key={i} className="border rounded p-4 mb-3">
-            <h3 className="font-semibold">
-              {p.name} ({p.constructor.name})
-            </h3>
-            <p className="text-sm text-gray-600">Age: {p.age}</p>
-            <p className="italic mt-1">{p.intro()}</p>
-          </div>
-        ))}
-      </div>
+      {people.map((p, i) => (
+        <div
+          key={i}
+          className="bg-gray-50 border border-gray-200 rounded-xl p-4 mb-4 hover:shadow-md transition"
+        >
+          <h3 className="font-semibold text-lg">
+            {p.name}
+            <span className="text-sm text-gray-500 ml-2">
+              ({p.constructor.name})
+            </span>
+          </h3>
+
+          <p className="text-sm text-gray-600 mt-1">
+            Age: {p.age}
+          </p>
+
+          <p className="mt-2 italic text-gray-700">
+            {p.intro()}
+          </p>
+        </div>
+      ))}
     </div>
-  );
+  </div>
+);
+
 }
