@@ -1,21 +1,26 @@
 import React from 'react';
+import ProductCard from './ProductCard.jsx';
 
-const ProductCard = ({ name, price, inStock }) => {
+const products = [
+  { name: 'Wireless Headphones', price: 129.99, inStock: true },
+  { name: 'Mechanical Keyboard', price: 89.99, inStock: false },
+  { name: 'Smart Watch', price: 199.99, inStock: true },
+];
+
+const cards = () => {
   return (
-    <div className="bg-white shadow-md rounded-lg p-4 w-60">
-      <div className="bg-gray-200 h-40 w-full mb-4 flex items-center justify-center">
-        {/* Image placeholder */}
-        <span className="text-gray-400">Image</span>
+    <div className="min-h-screen flex flex-col items-center bg-gray-100 p-8">
+      <h1 className="text-2xl font-bold mb-6">Library</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        {products.map((product, idx) => (
+          <ProductCard
+            key={idx}
+            name={product.name}
+            price={product.price}
+            inStock={product.inStock}
+          />
+        ))}
       </div>
-      <h2 className="text-lg font-semibold">{name}</h2>
-      <p className="text-gray-700">${price}</p>
-      <span
-        className={`mt-2 inline-block px-2 py-1 text-sm rounded-full ${
-          inStock ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'
-        }`}
-      >
-        {inStock ? 'In Stock' : 'Out of Stock'}
-      </span>
     </div>
   );
 };
