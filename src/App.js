@@ -1,31 +1,62 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar'; // import the Navbar
-import Library from './components/Library.jsx';
-import Inheritance from './components/Inheritance';
-import ProductCard from './components/ProductCard';
+import { Routes, Route, Link } from "react-router-dom";
+import ProductCard from "./components/ProductCard";
+import Library from "./components/Library";
+import Inheritance from "./components/Inheritance";
 
-function About() {
-  return <h1>About Page</h1>;
-}
-
-function Contact() {
-  return <h1>Contact Page</h1>;
-}
-
-function App() {
+export default function App() {
   return (
-    <>
-      <Navbar />
+    <div className="min-h-screen bg-gray-100 p-6">
+      {/* Navigation */}
+      <div className="flex gap-3 justify-center mb-6">
+        <Link
+          to="/products"
+          className="bg-blue-600 text-white px-4 py-2 rounded"
+        >
+          Products
+        </Link>
+
+        <Link
+          to="/library"
+          className="bg-green-600 text-white px-4 py-2 rounded"
+        >
+          Library
+        </Link>
+
+        <Link
+          to="/inheritance"
+          className="bg-purple-600 text-white px-4 py-2 rounded"
+        >
+          Inheritance
+        </Link>
+      </div>
+
+      {/* Routes */}
       <Routes>
-        <Route path="/" element={<Library />} />
-        <Route path="/product" element={<ProductCard />} />
+        <Route
+          path="/products"
+          element={
+            <div className="flex justify-center gap-6 flex-wrap">
+              <ProductCard title="Mechanical Keyboard" price={4500} inStock />
+<ProductCard title="Smart Watch" price={7000} inStock={false} />
+<ProductCard title="Wireless Headphones" price={3200} inStock />
+
+            </div>
+          }
+        />
+
+        <Route path="/library" element={<Library />} />
         <Route path="/inheritance" element={<Inheritance />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
+
+        {/* Default route */}
+        <Route
+          path="/"
+          element={
+            <h1 className="text-center text-xl font-semibold mt-10">
+              Select an experiment from above 👆
+            </h1>
+          }
+        />
       </Routes>
-    </>
+    </div>
   );
 }
-
-export default App;
