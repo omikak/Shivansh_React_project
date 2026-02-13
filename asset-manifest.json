@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Shivansh_React_project/static/css/main.29923dde.css",
-    "main.js": "/Shivansh_React_project/static/js/main.1a084e60.js",
+    "main.js": "/Shivansh_React_project/static/js/main.1debdea7.js",
     "index.html": "/Shivansh_React_project/index.html",
     "main.29923dde.css.map": "/Shivansh_React_project/static/css/main.29923dde.css.map",
-    "main.1a084e60.js.map": "/Shivansh_React_project/static/js/main.1a084e60.js.map"
+    "main.1debdea7.js.map": "/Shivansh_React_project/static/js/main.1debdea7.js.map"
   },
   "entrypoints": [
     "static/css/main.29923dde.css",
-    "static/js/main.1a084e60.js"
+    "static/js/main.1debdea7.js"
   ]
 }
