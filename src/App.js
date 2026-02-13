@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar'; // import the Navbar
-import Library from './components/Library';
+import Library from './components/Library.jsx';
 import Inheritance from './components/Inheritance';
 import ProductCard from './components/ProductCard';
 
