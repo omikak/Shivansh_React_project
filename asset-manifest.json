@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Shivansh_React_project/static/css/main.29923dde.css",
+    "main.js": "/Shivansh_React_project/static/js/main.10a55774.js",
+    "index.html": "/Shivansh_React_project/index.html",
+    "main.29923dde.css.map": "/Shivansh_React_project/static/css/main.29923dde.css.map",
+    "main.10a55774.js.map": "/Shivansh_React_project/static/js/main.10a55774.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.29923dde.css",
+    "static/js/main.10a55774.js"
+  ]
+}
