@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Shivansh_React_project/static/css/main.c6e09794.css",
-    "main.js": "/Shivansh_React_project/static/js/main.3532516a.js",
+    "main.css": "/Shivansh_React_project/static/css/main.e0ba1b15.css",
+    "main.js": "/Shivansh_React_project/static/js/main.5c5dd96a.js",
     "index.html": "/Shivansh_React_project/index.html",
-    "main.c6e09794.css.map": "/Shivansh_React_project/static/css/main.c6e09794.css.map",
-    "main.3532516a.js.map": "/Shivansh_React_project/static/js/main.3532516a.js.map"
+    "main.e0ba1b15.css.map": "/Shivansh_React_project/static/css/main.e0ba1b15.css.map",
+    "main.5c5dd96a.js.map": "/Shivansh_React_project/static/js/main.5c5dd96a.js.map"
   },
   "entrypoints": [
-    "static/css/main.c6e09794.css",
-    "static/js/main.3532516a.js"
+    "static/css/main.e0ba1b15.css",
+    "static/js/main.5c5dd96a.js"
   ]
 }
